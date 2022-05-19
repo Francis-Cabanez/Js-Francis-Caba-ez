@@ -26,34 +26,51 @@ if(producto <= 2){
     console.log("Su casilla rodante ideal seria Bombay")
 }else{
     console.log("Lo siento, no tenemos casilla para esa capacidad de personas")
-}
+};
 
 
-//valor de rodante por dia
 
-let precio= prompt("Ingrese nombre de la casilla recomendada y le diremos el costo por dia");
-let precioTraful=("2000 por dia");
-let precioDenver=("3000 por dia");
-let precioBombay=("4000 por dia");
 
-while(precio == "denver"){
-    
-    alert("el precio de denver es $" +precioDenver);
 
-    
-    precio= prompt("Ingrese nombre de la casilla recomendada y le diremos el costo por dia (0 para salir)");
-    
-}
-while(precio == "traful"){ 
 
-    alert("el precio de traful es $" +precioTraful);
-    
-    precio= prompt("Ingrese nombre de la casilla recomendada y le diremos el costo por dia  (0 para salir)");
-}
+const unidades=[
+    { 
+        casilla:"traful",
+        capacidad:"2 personas",
+        precio: "2000 por dia" ,
+    },
 
-while(precio == "bombay"){ 
+    {
+        casilla:"denver",
+        capacidad:"3 personas",
+        precio:"3000 por dia",
+    },
 
-    alert("el precio de traful es $" +precioBombay);
-    
-    precio= prompt("Ingrese nombre de la casilla recomendada y le diremos el costo por dia (0 para salir)");
-}
+    {
+        casilla:"bombay",
+        capacidad:"4 personas",
+        precio: "4000 por dia",
+
+    },
+
+
+];
+
+
+ let casillaABuscar= prompt("Ingrese el nombre del rodante recomendado");
+let busqueda=unidades.find((rodantes)=>rodantes.casilla.toLowerCase() ==casillaABuscar.toLowerCase());
+console.log(busqueda);
+
+
+
+
+let numero= parseFloat(prompt("ingrese 1 para ver requisitos legales"));
+let requisitos=(" Gancho tipo bocha 1  7/8,\n Ficha conexión de luces, \n Registro de conducir tipo B2 en adelante (B1 no sirve), \n Entregamos la unidad con patente 101, \n Con sus datos sacamos el seguro de la unidad.");
+
+do{
+    numero==1;
+   
+   alert("Requisitos legales para el alquiler:"+requisitos);
+   }
+while(numero!=1);
+    alert("Gracias por su consulta");
