@@ -31,7 +31,7 @@ if(producto <= 2){
 
 
 
-
+// eleccion de unidades
 
 const unidades=[
     { 
@@ -56,6 +56,10 @@ const unidades=[
 
 ];
 
+    for(const rodantes of unidades ){
+        console.log(rodantes);
+    }
+
 
  let casillaABuscar= prompt("Ingrese el nombre del rodante recomendado");
 let busqueda=unidades.find((rodantes)=>rodantes.casilla.toLowerCase() ==casillaABuscar.toLowerCase());
@@ -63,7 +67,7 @@ console.log(busqueda);
 
 
 
-
+//  Requisitos de alquiler
 let numero= parseFloat(prompt("ingrese 1 para ver requisitos legales"));
 let requisitos=(" Gancho tipo bocha 1  7/8,\n Ficha conexión de luces, \n Registro de conducir tipo B2 en adelante (B1 no sirve), \n Entregamos la unidad con patente 101, \n Con sus datos sacamos el seguro de la unidad.");
 
