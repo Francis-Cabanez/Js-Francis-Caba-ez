@@ -103,12 +103,42 @@ dataTel.onchange=()=>{
 
     console.log("Su telefono es:" +dataTel.value);
 }
-
-
-//boton colors
-
-let boton=document.getElementById("boton1");
-
-boton.mousemove=()=>{
-    boton.style.background.green;
+//eventoboton
+let boton=document.getElementById("buton");
+boton.onclick=()=>{
+    boton.className="btn btn-danger";
+    boton.textContent="Reservado";
 }
+let boton2=document.getElementById("buton2");
+boton2.onclick=()=>{
+    boton2.className="btn btn-danger";
+    boton2.textContent="Reservado";
+}
+let boton3=document.getElementById("buton3");
+boton3.onclick=()=>{
+    boton3.className="btn btn-danger";
+    boton3.textContent="Reservado";
+}
+
+
+
+// JSON---------------------------------------------------
+
+
+let carrito= [];
+let lista=document.getElementById("listaCasilla");
+
+renderizarProductos();
+
+function renderizarProductos() {
+    for (const casilla of unidades) {
+
+        lista.innerHTML+=`<li class="col-sm-4 list-group-item">
+        <h3>  ${casilla.nombre} </h3>
+        <img src=${casilla.foto} width="250" height="250">
+        <p><strong> Por dia: $ ${casilla.precio} </strong></p>
+        </li>`
+    }
+}
+
+
