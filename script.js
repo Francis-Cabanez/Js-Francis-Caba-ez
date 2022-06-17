@@ -23,7 +23,8 @@ boton3.onclick=()=>{
 
 let carrito= [];
 let lista=document.getElementById("listaCasilla");
-
+let dolarVenta;
+valorDolar();
 renderizarProductos();
 
 function renderizarProductos() {
@@ -33,8 +34,17 @@ function renderizarProductos() {
         <h3>  ${casilla.nombre} </h3>
         <img src=${casilla.foto} width="250" height="250">
         <p><strong> Por dia: $ ${casilla.precio} </strong></p>
+        <p>Precio U$ ${(casilla.precio/dolarVenta)}</p>
+        
         </li>`
     }
+}
+
+async function valorDolar() {
+    const dolarHoy = "https://api-dolar-argentina.herokuapp.com/api/dolarblue";
+    const resp=await fetch(dolarHoy)
+    const data=await resp.json()
+    dolarVenta = data.venta;
 }
 
 
@@ -95,10 +105,6 @@ class Cliente{
     
 }
 }
-
-
-
-
 
 
 
