@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet"  href="css/estilo.css">
     <title>Desafio entregable</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
 
             <!---Primer post-->
 
-            <div>
+            <div class="card">
                 <ul id="listaCasilla" class="row list-group list-group-horizontal">
                     <!-- Aqui casillas -->
                 </ul>
@@ -25,38 +26,39 @@
 
             <!----Segundo post-->
 
-            <table class="table">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">#</th>
+            <div class="row col-lg-12 col-12">
+                    <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                            
                             <th scope="col">Nombre</th>
                             <th scope="col">Capacidad</th>
                             <th scope="col">Reservas</th>
     
-                        </tr>
-                        </thead>
+                                </tr>
+                                    </thead>
                         <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Traful</td>
-                            <td>2 personas</td>
-                            <td> <button id="buton" type="button" class="btn btn-success">Reservar</button> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Denver</td>
-                            <td>3 personas</td>
-                            <td><button id="buton2" type="button" class="btn btn-success">Reservar</button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Bombay</td>
-                            <td>4 personas</td>
-                            <td><button id="buton3" type="button" class="btn btn-success">Reservar</button></td>
-                        </tr>
-                        </tbody>
-            </table>
-
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Traful</td>
+                                    <td>2 personas</td>
+                                    <td> <button id="buton" type="button" class="btn btn-success">Reservar</button> </td>
+                                    </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Denver</td>
+                                    <td>3 personas</td>
+                                    <td><button id="buton2" type="button" class="btn btn-success">Reservar</button></td>
+                                    </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Bombay</td>
+                                    <td>4 personas</td>
+                                    <td><button id="buton3" type="button" class="btn btn-success">Reservar</button></td>
+                                    </tr>
+                            </tbody>
+                    </table>
+            </div>
 
             <!---Tercer post-->
                             <div class="row col-lg-12 col-12">
@@ -94,7 +96,7 @@
                                                 
                                             </select>
                                     </div>
-
+                                    
                                 <div class="form-group">
                                         <label for="exampleFormControlTextarea1">Consultas!</label>
                                             <textarea class="form-control" id="consulta" rows="3"></textarea>
@@ -106,7 +108,6 @@
                             </form>
 
          </main>
-
 
 
 

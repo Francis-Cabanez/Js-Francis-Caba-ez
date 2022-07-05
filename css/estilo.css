@@ -1,0 +1,40 @@
+body{
+    background-image: url(../assets/img/fondo.jpg);
+}
+
+.row {
+    justify-content: center; 
+}
+
+.table{
+    margin-left: 130px;
+    margin-top: 20px;
+    margin-right: 80px;
+    border: solid grey;
+}
+.card>.list-group:first-child{
+    padding-left: 143px;
+    padding-right: 75px;
+    background-image: url(../assets/img/fondo.jpg);
+}
+
+.list-group-horizontal>.list-group-item:first-child{
+
+    background-color: #adb5bd3d;
+}
+.list-group-horizontal>.list-group-item+.list-group-item{
+    
+    background-color: #adb5bd3d;
+}
+.card{
+    background-image: url(../assets/img/fondo.jpg);
+}
+
+
+.form {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: solid grey;
+}

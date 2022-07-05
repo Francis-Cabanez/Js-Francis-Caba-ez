@@ -21,7 +21,7 @@ boton3.onclick=()=>{
 // JSON---------------------------------------------------
 
 
-let carrito= [];
+
 let lista=document.getElementById("listaCasilla");
 let dolarVenta;
 valorDolar();
@@ -30,7 +30,7 @@ renderizarProductos();
 function renderizarProductos() {
     for (const casilla of unidades) {
 
-        lista.innerHTML+=`<li class="col-sm-4 list-group-item">
+        lista.innerHTML+=`<li class=" col-sm-4 list-group-item">
         <h3>  ${casilla.nombre} </h3>
         <img src=${casilla.foto} width="250" height="250">
         <p><strong> Por dia: $ ${casilla.precio} </strong></p>
